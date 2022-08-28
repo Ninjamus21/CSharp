@@ -1,0 +1,24 @@
+/*
+                key to car
+                bool confirmed = false;
+                string Key;
+                do {
+                    Console.Write("Please enter a login key: ");
+                    Key = Console.ReadLine();
+                    Console.WriteLine("You entered, " + Key + " as your login key!");
+
+                    ConsoleKey response;
+                    do
+                    {
+                        Console.Write("Are you sure you want to choose this as your login key? [y/n] ");
+                        response = Console.ReadKey(false).Key;   // true is intercept key (dont show), false is show
+                        if (response != ConsoleKey.Enter)
+                            Console.WriteLine();
+
+                    } while (response != ConsoleKey.Y && response != ConsoleKey.N);
+
+                    confirmed = response == ConsoleKey.Y;
+                } while (!confirmed);
+                Console.WriteLine("You chose {0}!", Key);
+                Console.ReadLine();
+*/
